@@ -17,6 +17,28 @@
     top: 150px;
 }
 
+.animated {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
 #block {
     width: 20px;
     height: 20px;
@@ -24,7 +46,7 @@
     position: relative;
     top: 130px;
     left: 480px;
-    animation: block 1s infinite;
+    animation: block 1s infinite linear;
 }
 
 @keyframes block {
